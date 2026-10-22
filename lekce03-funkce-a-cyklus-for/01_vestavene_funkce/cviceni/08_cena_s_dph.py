@@ -6,4 +6,5 @@
 #    druhý ho dokonči.
 cena = 1000
 
-
+print("bez DPH:", cena, "Kč,", end=" ")
+print("s DPH:", round(cena * 1.21), "Kč") 

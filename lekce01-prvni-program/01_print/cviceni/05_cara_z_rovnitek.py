@@ -2,5 +2,5 @@
 # Doplň kód pod zadání a soubor spusť (Run).
 
 # Vypiš čáru z 15 rovnítek (=). Použij opakování hvězdičkou *.
-
+print("="*15)
 

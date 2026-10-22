@@ -3,4 +3,5 @@
 
 # Vytvoř proměnnou jmeno a ulož do ní svoje jméno. Pak ji vypiš.
 
-
+jmeno = "AdelLa"
+print ("Ahoj", jmeno)

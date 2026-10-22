@@ -4,4 +4,5 @@
 # Zeptej se ještě na jednu věc (třeba oblíbenou barvu)
 #    a vypiš ji ve větě.
 
-
+city = input("Where do you live?")
+print("She lives in", city)

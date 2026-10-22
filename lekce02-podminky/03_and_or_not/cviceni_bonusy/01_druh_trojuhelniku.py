@@ -10,4 +10,10 @@ a = 5
 b = 5
 c = 8
 
+if a == b and b == c:
+    print("rovnostranný")
+elif a == b or b == c or a == c:
+    print("rovnoramenný")
+else:
+    print("různostranný")
 

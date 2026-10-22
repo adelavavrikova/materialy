@@ -6,4 +6,7 @@
 ma_ridicak = True
 ma_zakaz = True
 
-
+if ma_ridicak == True and ma_zakaz == False:
+    print("Můžeš řídit")
+else:
+    print("Nemůžeš řídit")

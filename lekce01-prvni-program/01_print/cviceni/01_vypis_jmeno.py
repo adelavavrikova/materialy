@@ -2,5 +2,5 @@
 # Doplň kód pod zadání a soubor spusť (Run).
 
 # Vypiš na obrazovku svoje jméno.
-
+print("Adéla")
 

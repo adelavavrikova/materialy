@@ -4,4 +4,5 @@
 # Vytvoř proměnnou mesto a vypiš větu: Bydlím v <mesto>
 #    (místo <mesto> se má vypsat hodnota proměnné)
 
-
+mesto="Praze"
+print("Bydlím v", mesto)

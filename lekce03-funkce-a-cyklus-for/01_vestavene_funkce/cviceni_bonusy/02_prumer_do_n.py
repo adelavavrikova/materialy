@@ -4,4 +4,8 @@
 # Průměr od 1 do N. Uživatel zadá číslo N. Vypiš průměr všech čísel
 #     od 1 do N (součet čísel vyděl jejich počtem).
 
+n = int(input("Say number N"))
+prumer = sum(range(1, n+1)) / n
 
+print(prumer)
+print (sum(range(1, n+ 1))/ n)

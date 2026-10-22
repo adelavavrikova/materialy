@@ -5,4 +5,4 @@
 #    jestli je cena menší nebo rovna 50.
 cena = 65
 
-
+print(cena <= 50) 

@@ -16,9 +16,13 @@ print(vek >= 18 and vek < 65)   # True – je zároveň dospělý i mladší 65
 
 
 # or – stačí jedno:
-den = "sobota"
+den = "utery"
 print(den == "sobota" or den == "neděle")   # True – je to víkend
 
+if den == "sobota" or den == "Nedele":
+    print("Je víkend")
+else:
+    print("Není víkend")
 
 # Praktická ukázka. Obdélník má dvě strany a obě musí být kladné.
 # Dřív bychom to řešili vnořeným if, teď stačí jeden řádek s or:

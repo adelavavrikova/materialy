@@ -4,4 +4,12 @@
 # Uživatel postupně zadává čísla. Sčítej je. Jakmile zadá 0,
 #    přestaň se ptát a vypiš celkový součet.
 
+soucet = 0
+cislo = int(input("Zadej cislo, kdyz zadas 0 tak koncime"))
 
+while cislo != 0:
+    soucet = soucet + cislo 
+    print("Prubezny soucet je zatim", soucet)
+    cislo = int(input("Zadej cislo, kdyz zadas 0 tak koncime"))
+print("soucet je:", soucet)
+    

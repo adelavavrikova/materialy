@@ -5,4 +5,6 @@
 #    jestli je větší než 100.
 #    (Vzpomeň si z minula: text z input() převedeš na číslo pomocí int().)
 
+cislo = float(input("Rekni cislo"))
 
+print(cislo > 100)

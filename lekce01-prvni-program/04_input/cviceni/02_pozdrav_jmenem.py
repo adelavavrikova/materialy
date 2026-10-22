@@ -2,5 +2,6 @@
 # Doplň kód pod zadání a soubor spusť (Run).
 
 # Pozdrav uživatele jeho jménem (např. Ahoj, Anna).
-
+jmeno = "Adela" 
+print ("Ahoj", jmeno)
 

@@ -8,4 +8,12 @@
 #      - když nemá, vypiš "Objednej si."
 #    Když nemá hlad, vypiš "Tak nic, uvidíme později.".
 
-
+hlad = input("Máš hlad, odpověz ano/ne?")
+if hlad == "ano":
+    jidlo = input("Máš doma jídlo? ano/ne")
+    if jidlo == "ano":
+        print("Uvař si")
+    else:
+            print("Objednej si jídlo online")
+else:
+    print("Je fajn, že nemáš hlad")

@@ -8,4 +8,7 @@ a = 3
 b = 4
 c = 5
 
-
+if a<c+b and c<a+b and b<a+c:
+    print("Toto je trojúhelník")
+else:
+    print("Toto není trojúhelník")

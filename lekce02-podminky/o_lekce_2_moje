@@ -1,0 +1,85 @@
+# python umi taky porovnovat ruzne veci, kdyz to jsou dve rovnitka == tak ja to platí, kdyz to je =! tak je to neplati
+# program pak sam vyhodnoti jestli je to pravda nebo ne
+# pak to plati na klasicky porovnavaci znaminka
+
+print(5 == 5)     # True   pět se rovná pěti
+print(5 == 3)     # False  pět se nerovná třem
+
+print(5 != 3)     # True   pět není tři
+print(5 != 5)     # False  pět se rovná pěti, podmínka „není rovno" tedy neplatí
+
+print(5 > 3)      # True   pět je opravdu větší než tři
+print(5 < 3)      # False  pět není menší než tři
+
+print(5 >= 5)     # True   pět je rovno pěti (stačí, aby platila jedna z možností)
+print(3 <= 2)     # False  tři není menší ani rovno dvěma
+
+print("Anna" == "Anna")   # True   oba řetězce jsou úplně stejné
+print("Anna" == "anna")   # False  liší se první písmeno, velké a malé není totéž
+
+pravda = True
+print("Promenna pravda je", pravda)
+# tohle je spíš komentář k tomu, že python umí rozeznávat hodnotu pravda a nepravda neboli true false)
+# promenna se nemůže pojmenovat podle klíčového slova Pythonu (např. print)
+
+teplota = 2
+je_zima = teplota < 5
+print(je_zima)
+# teplota je mensi nez 5, takze program jen vyhodnoti, jestli je to pravda nebo ne
+
+#ted probirame podminky takze if, a nebo if else, nejdulezitejsi je to pod if mit vzdycky odsazeny
+
+vek = int(input("Kolik je ti le"))
+
+if vek >= 18:
+    print("Muzes volit")
+    print("Jsi plnoletá")
+
+else:
+    print ("nejsi plnoleta nemuzes volit")
+
+teplota = int(input("Kolik je venku stupnu?"))
+
+if teplota > 15:
+    print("Tak to je venku hezky")
+else:
+    print("Tak to je v háji")
+
+mam_hlad = True
+mam_doma_jidlo = True
+# vnorene podminky, musim spravne odsazovat je to trcohu beh na dlouhou trat
+
+if mam_hlad:
+    print("Mam hlad")
+    if mam_doma_jidlo:
+        print("Neumřu hlady")
+    else:
+        print("Umřu hlady")
+else:
+    print("nemám hlad")
+
+#procvicoani and / or, nevim, proc mi to nefunguej
+
+a = int(input("Zadej stranu a"))
+b = int(input("Zadej stranu b"))
+
+if a>0 and b>0:
+    if a == b:
+        print("Toto je ctverec, jeho obsah je,", a*b)
+    print("Obsah obdelniku je", a*b)
+else:
+    print("Toto neni obdelnik")
+
+#to nahore jsem nepouzila tak jak jsem chtela, chci, aby to bude reklo, ze je to obdelnik nebo ctverec, takze musim pouzit elif
+
+a = int(input("Zadej stranu a"))
+b = int(input("Zadej stranu b"))
+
+#tohle porad nedela co chci, protoze mi to rovnou napise ten obdelnik, ja bych chtela, aby to napsalo az ctverec
+
+if a>0 and b>0:
+    print("Obsah obdelniku je", a*b)
+elif a == b:
+    print("Toto je ctverec a jeho obsah je", a*b)
+else:
+    print("Toto neni obdelnik ani ctverec")

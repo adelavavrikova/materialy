@@ -24,3 +24,6 @@ else:
 # Nezapomeň na převod: input() vrací vždycky text. Kdybychom napsali
 # jen strana = input(...), byl by v proměnné text "5", ne číslo 5,
 # a počítat by s ním nešlo. Proto ho převádíme na číslo pomocí float().
+
+vek = 5
+print (vek>= 18 and vek <65)

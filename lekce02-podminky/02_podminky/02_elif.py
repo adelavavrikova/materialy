@@ -46,3 +46,14 @@ elif teplota < 25:
 
 # Při teplotě 25 neplatí ani jedna podmínka (25 není menší než 25),
 # takže se nevypíše nic. Zkus změnit teplotu na 10.
+
+teplota1 = int(input("Kolik je stupnu"))
+
+if teplota1 < 0:
+    print("Mrzne.")
+elif teplota1 < 15:
+    print("Chladno.")
+elif teplota1 < 25:
+    print("Příjemně.")
+else:
+    print("Vsichni tady umreme")
