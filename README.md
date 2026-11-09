@@ -20,6 +20,8 @@ přidávají, ty starší zůstávají beze změny.
 | 3 | `lekce03-funkce-a-cyklus-for/` | vestavěné funkce, cyklus for |
 | 4 | `lekce04-cyklus-while/` | cyklus while, break, continue, for vs while |
 | 5 | `lekce05-vlastni-funkce/` | def, parametry, return |
+| 6 | `lekce06-retezce/` | f-stringy, metody řetězců, indexování a výřezy |
+| 7 | `lekce07-procvicovani-a-debugging/` | čtení chybových hlášek, debugger ve VS Code |
 
 Další lekce přibývají v průběhu kurzu.
 
@@ -52,13 +54,21 @@ proto musí soubory dodržet formát, který převod umí přečíst:
   řádek `# Cvičení N – …` nebo `# Bonus N – …`, kde N odpovídá číslu `NN_` v názvu.
 - Řešení má v `reseni/` stejný název souboru a první řádek
   `# Řešení cvičení N – …` nebo `# Řešení bonusu N – …`.
+- Obrázek (PNG, JPEG, GIF, WebP nebo SVG) leží ve složce konceptu a výklad ho
+  zmíní jménem souboru. Na webu se vloží za odstavec, který ho zmiňuje. Řádek,
+  který je celý v závorce, třeba `# (Ukazuje to obrázek cyklus_while.png.)`,
+  se na webu obrázkem nahradí celý – do takové závorky proto nepiš nic
+  dalšího, co by čtenářka na webu měla vidět.
 
 Podrobný popis formátu je v
 [návodu k importu](https://github.com/pyladiesprague/public-pages/blob/main/code/materials/README.md)
 (repo je soukromé, vidí ho kouči).
 
-Kontrolu dělá GitHub Action `.github/workflows/web.yml`. U každého PR (kromě PR
-z forků, které nemají přístup k tokenu `PUBLIC_PAGES_TOKEN`) a po každém pushi
-do `main` zkusí materiály převést na web, nic přitom nezapisuje; chyba formátu
-nebo konflikt s redakčními opravami webu kontrolu shodí. Po úspěšném pushi do
-`main` pak pošle webu signál `materialy-push` a ten otevře PR s novými stránkami.
+Kontrolu dělá GitHub Action `.github/workflows/web.yml`. Běží jen tady v
+`pyladiesprague/materialy`. Forky účastnic mají workflow taky, ale nemají token
+`PUBLIC_PAGES_TOKEN`, a tak se v nich přeskočí (jinak by jim každý push končil
+chybou a e-mailem od GitHubu). U každého PR (kromě PR z forků, ke kterým se
+token taky nedostane) a po každém pushi do `main` zkusí materiály převést na
+web, nic přitom nezapisuje; chyba formátu nebo konflikt s redakčními opravami
+webu kontrolu shodí. Po úspěšném pushi do `main` pak pošle webu signál
+`materialy-push` a ten otevře PR s novými stránkami.
