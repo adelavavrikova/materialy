@@ -82,3 +82,5 @@ print("po zavolání")
 #   odsazení         = odsazené řádky jsou tělo funkce
 #
 # (Definici a zavolání ukazuje obrázek definice_funkce.png.)
+
+#chapu

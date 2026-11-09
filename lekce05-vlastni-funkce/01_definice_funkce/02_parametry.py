@@ -38,3 +38,5 @@ def vypis_ucastnici(jmeno, mesto, vek):
 
 vypis_ucastnici("Anna", "Prahy", 30)
 vypis_ucastnici("Petra", "Brna", 25)
+
+#chapu

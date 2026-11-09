@@ -5,4 +5,12 @@
 #    Zeptej se uživatele na věk a podle výsledku vypiš
 #    "Můžeš dál." nebo "Ještě ne.".
 
+def je_plnoleta(vek):
+    if vek >= 18:
+        return print("Můžeš dále")
+    else:
+        return print("Ještě ne.")
 
+je_plnoleta(27)
+
+#ještě by se tam dalo přidat, aby věk byl input
